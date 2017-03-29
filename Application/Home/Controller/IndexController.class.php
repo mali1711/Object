@@ -68,16 +68,21 @@ class IndexController extends Controller {
      * */
     public function pingLun()
     {
-        $User = M("luntan");
-        $data['user_id'] = $_SESSION['users']['info']['id'];
-        $data['content'] = $_POST['content'];
-        $data['addTime'] = time();
-        $res = $User->data($data)->add();
-        if($res){
-            $this->success('评论成功');
+        if($_SESSION['users']['info']){
+            $User = M("luntan");
+            $data['user_id'] = $_SESSION['users']['info']['id'];
+            $data['content'] = $_POST['content'];
+            $data['addTime'] = time();
+            $res = $User->data($data)->add();
+            if($res){
+                $this->success('评论成功');
+            }else{
+                $this->error('评论失败');
+            }
         }else{
-            $this->error('评论失败');
+            $this->error('登录后才可以评论的');
         }
+
     }
 
     /*
