@@ -1,0 +1,54 @@
+[ 2017-03-28T09:49:42+08:00 ] 127.0.0.1 /Object/Public/Style/boots/css/bootstrap.min.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-28T09:49:43+08:00 ] 127.0.0.1 /Object/Public/Style/boots/css/bootstrap.min.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-03-28T10:01:06+08:00 ] 127.0.0.1 /Object/PublicStyle/boots/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:PublicStyle
+
+[ 2017-03-28T10:01:06+08:00 ] 127.0.0.1 /Object/PublicStyle/boots/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:PublicStyle
+
+[ 2017-03-28T10:01:07+08:00 ] 127.0.0.1 /Object/PublicStyle/boots/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:PublicStyle
+
+[ 2017-03-28T10:01:07+08:00 ] 127.0.0.1 /Object/PublicStyle/boots/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:PublicStyle
+
+[ 2017-03-28T10:01:07+08:00 ] 127.0.0.1 /Object/PublicStyle/boots/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:PublicStyle
+
+[ 2017-03-28T10:01:07+08:00 ] 127.0.0.1 /Object/PublicStyle/boots/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:PublicStyle
+
+[ 2017-03-28T11:56:09+08:00 ] 127.0.0.1 /Object/Public/Images/20170328115433.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
