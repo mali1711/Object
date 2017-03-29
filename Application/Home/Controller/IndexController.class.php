@@ -8,7 +8,7 @@ class IndexController extends Controller {
         $count      = $pl->count();// 查询满足要求的总记录数
         $Page       = new \Think\Page($count,4);
         $show       = $Page->show();
-        $pingLun = $pl->join('users ON users.id = luntan.user_id')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $pingLun = $pl->join('users ON users.id = luntan.user_id')->order('luntan_id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         $name =  $_SESSION['users']['info']['name'];
         $this->assign('name',$name);
         $this->assign('pingLun',$pingLun);
