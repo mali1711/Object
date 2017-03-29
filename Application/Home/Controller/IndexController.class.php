@@ -4,6 +4,15 @@ use Think\Controller;
 class IndexController extends Controller {
     public function index()
     {
+        $pl = M('luntan');
+        $count      = $pl->count();// 查询满足要求的总记录数
+        $Page       = new \Think\Page($count,4);
+        $show       = $Page->show();
+        $pingLun = $pl->join('users ON users.id = luntan.user_id')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $name =  $_SESSION['users']['info']['name'];
+        $this->assign('name',$name);
+        $this->assign('pingLun',$pingLun);
+        $this->assign('page',$show);
         $this->display('Index/index');
     }
 
@@ -51,6 +60,43 @@ class IndexController extends Controller {
             if($result){
                 $this->success('新用户注册成功,马上登录',U('index/login'));
             }
+        }
+    }
+
+    /*
+     * 评论
+     * */
+    public function pingLun()
+    {
+        $User = M("luntan");
+        $data['user_id'] = $_SESSION['users']['info']['id'];
+        $data['content'] = $_POST['content'];
+        $data['addTime'] = time();
+        $res = $User->data($data)->add();
+        if($res){
+            $this->success('评论成功');
+        }else{
+            $this->error('评论失败');
+        }
+    }
+
+    /*
+     * 删除评论
+     * */
+    public function delPingLun()
+    {
+        $luntan = M('luntan');
+        $user = $_GET['user'];
+        $pingLunId = $_GET['pl'];
+        if($_SESSION['users']['info']['id']==$user){
+            $res = $luntan->delete($pingLunId);
+            if($res){
+                $this->success('删除成功');
+            }else{
+                $this->success('操作失败，请再来一次');
+            }
+        }else{
+            $this->error('这个不是您评论的，您没有权限这么做，白痴');
         }
     }
 }
