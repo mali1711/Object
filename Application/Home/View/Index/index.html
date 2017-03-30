@@ -7,11 +7,11 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <style type="text/css">
         body, html{width: 100%;height: 100%; margin:0;font-family:"微软雅黑";}
-        #l-map{height:300px;width:100%;}
-        #r-result{width:100%;}
+        #allmap{width:100%;height:500px;}
+        p{margin-left:5px; font-size:14px;}
     </style>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=j5Z5SovpW0uBFNOHBougUc7cC1xb88FV"></script>
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
     <title>西安旅游系统</title>
     <style>
         table{
@@ -120,7 +120,7 @@
                 </table>
             </center>
         </div>
-        <div id="l-map"></div>
+     <div id="allmap"></div>
     </div>
     <h2>景点列表</h2>
     <div class="row">
@@ -200,10 +200,34 @@
 </html>
 <script type="text/javascript">
     // 百度地图API功能
-    var map = new BMap.Map("l-map");            // 创建Map实例
-    map.centerAndZoom(new BMap.Point(108.932597,34.265473), 11);
-    var local = new BMap.LocalSearch(map, {
-        renderOptions: {map: map, panel: "r-result"}
-    });
-    local.search("景点");
+    map = new BMap.Map("allmap");
+    map.centerAndZoom(new BMap.Point(108.941707,34.349582), 11);
+    var data_info = [[109.286708,34.389107,"<div style='color:red'>秦始皇陵兵马俑</div><a href=\"__MODULE__/JingDian/show?x=109.286708&y=34.389107\">详情</a><br/>地址：秦俑馆公路与秦陵北路交汇处东南 "],
+        [109.219602,34.37271,"<div style='color:red'>华清池</div><a href=\"__MODULE__/Index/JingDian/show?x=109.219602&y=34.37271\">详情</a><br/>地址：华清路038号 "],
+        [108.932597,34.265473,"<div style='color:red'>古城墙</div><a href=\"__MODULE__/JingDian/show?x=108.932597&y=34.265473\">详情</a><br/>地址：西大街与西举院巷交叉口附近 "],
+        [108.980798,34.218929,"<div style='color:red'>大唐芙蓉园</div><a href=\"__MODULE__/JingDian/show?x=108.980798&y=34.218929\">详情</a><br/>地址：陕西省西安市雁塔区芙蓉南路 "]
+    ];
+    var opts = {
+        width : 350,     // 信息窗口宽度
+        height: 100,     // 信息窗口高度
+        title : "" , // 信息窗口标题
+        enableMessage:true//设置允许信息窗发送短息
+    };
+    for(var i=0;i<data_info.length;i++){
+        var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));  // 创建标注
+        var content = data_info[i][2];
+        map.addOverlay(marker);               // 将标注添加到地图中
+        addClickHandler(content,marker);
+    }
+    function addClickHandler(content,marker){
+        marker.addEventListener("click",function(e){
+            openInfo(content,e)}
+        );
+    }
+    function openInfo(content,e){
+        var p = e.target;
+        var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+        var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象
+        map.openInfoWindow(infoWindow,point); //开启信息窗口
+    }
 </script>
