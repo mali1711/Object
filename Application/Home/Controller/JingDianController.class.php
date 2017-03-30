@@ -5,12 +5,14 @@ class JingDianController extends Controller {
 
     public function addJingDian()
     {
-        
+
     }
 
     public function show()
     {
         var_dump($_GET);
     }
+
+
     
 }
