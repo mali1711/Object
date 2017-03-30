@@ -40,7 +40,7 @@
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
     <div class="navbar-header">
-        <a class="navbar-brand" href="#">西安旅游系统</a>
+        <a class="navbar-brand" href="#"><b class="text-important">西安旅游系统</b></a>
     </div>
     <div>
         <ul class="nav navbar-nav">
@@ -67,20 +67,21 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="/Object/Public/Image/QQ20170328094030.png" alt="...">
+                        <img src="/Object/Public/Image/QQ20170330110306.png" alt="...">
                         <div class="carousel-caption">
                             西安古城墙
                         </div>
                     </div>
                     <div class="item">
-                        <img src="/Object/Public/Image/QQ20170328094030.png" alt="...">
+                        <img src="/Object/Public/Image/QQ20170330110522.png" alt="...">
                         <div class="carousel-caption">
+                            兵马俑
                         </div>
                     </div>
                     <div class="item">
-                        <img src="/Object/Public/Image/QQ20170328094030.png" alt="...">
+                        <img src="/Object/Public/Image/QQ20170330110619.png" alt="...">
                         <div class="carousel-caption">
-                            ...
+                            老城
                         </div>
                     </div>
                 </div>
@@ -166,15 +167,17 @@
     <?php if(is_array($pingLun)): foreach($pingLun as $key=>$vo): ?><div class="media">
         <div class="media-left">
             <a href="#">
-                <img class="media-object" src="/Object/Public/image/20170329144041.png" alt="...">
+                <h4 class="media-heading"><?php echo ($vo["name"]); ?>:</h4>
             </a>
         </div>
         <div class="media-body">
-            <h4 class="media-heading"><?php echo ($vo["name"]); ?></h4>
+
+            <div class="alert alert-info">
             <?php echo ($vo["content"]); ?>
-            <span class="pull-right">
-            <a href="/Object/index.php/Home/Index/delPingLun?user=<?php echo ($vo["user_id"]); ?>&pl=<?php echo ($vo["luntan_id"]); ?>" class="text-danger">删除</a>
-            </span>
+                <span class="pull-right">
+                     <a href="/Object/index.php/Home/Index/delPingLun?user=<?php echo ($vo["user_id"]); ?>&pl=<?php echo ($vo["luntan_id"]); ?>" class="text-danger">删除</a>
+                </span>
+            </div>
         </div>
     </div><?php endforeach; endif; ?>
     <?php echo ($page); ?>
