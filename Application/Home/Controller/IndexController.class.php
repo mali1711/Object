@@ -117,7 +117,7 @@ public function attractions_info()
     foreach($list as $k=>$v){
         $data[$k][] =  floatval($v['attractions_longitude']);
         $data[$k][] =  floatval($v['attractions_latitude']);
-        $data[$k][] =  "<div style='color:red'>秦始皇陵兵马俑</div><a href=\"Home/JingDian/show?x={$v['attractions_longitude']}&y={$v['attractions_latitude']}\">详情</a><br/>地址：{$v['attractions_address']}";
+        $data[$k][] =  "<div style='color:red'>{$v['attractions_name']}/div><a href=\"index.php/Home/JingDian/show?x={$v['attractions_longitude']}&y={$v['attractions_latitude']}\">详情</a><br/>地址：{$v['attractions_address']}";
     };
     return json_encode($data);
     }

@@ -15,7 +15,6 @@ class JingDianController extends Controller {
         $where['attractions_longitude'] =$_GET['x'];
         $where['attractions_latitude'] =$_GET['y'];
         $list = $attractions->where($where)->find();
-        dump($list);
         if($list){
             $this->assign('list',$list);
             $this->display('Index/JingDian');

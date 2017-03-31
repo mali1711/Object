@@ -1734,3 +1734,183 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+[ 2017-03-31T16:46:27+08:00 ] 127.0.0.1 /Object/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\Object\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `luntan` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `luntan` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `luntan` INNER JOIN users ON users.id = luntan.user_id  ORDER BY luntan_id desc LIMIT 0,4   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: users C:\xampp\htdocs\Object\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `attractions`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-31T20:51:54+08:00 ] 127.0.0.1 /Object/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\Object\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `luntan` [ RunTime:0.0420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `luntan` LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `luntan` INNER JOIN users ON users.id = luntan.user_id  ORDER BY luntan_id desc LIMIT 0,4   [ RunTime:0.0170s ]
+NOTIC: [8] Undefined index: users C:\xampp\htdocs\Object\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `attractions`  [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-31T20:52:15+08:00 ] 127.0.0.1 /Object/index.php/Home/JingDian/show?x=108.932597&y=34.265473
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\Object\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\JingDianController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') C:\xampp\htdocs\Object\Application\Home\Controller\JingDianController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `attractions` WHERE `attractions_longitude` = '108.932597' AND `attractions_latitude` = '34.265473' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-31T20:54:34+08:00 ] 127.0.0.1 /Object/index.php/Home/JingDian/show?x=108.932597&y=34.265473
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\Object\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\JingDianController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') C:\xampp\htdocs\Object\Application\Home\Controller\JingDianController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `attractions` WHERE `attractions_longitude` = '108.932597' AND `attractions_latitude` = '34.265473' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-31T20:54:48+08:00 ] 127.0.0.1 /Object/index.php/Home/JingDian/show?x=108.932597&y=34.265473
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\Object\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [2048] Declaration of Home\Controller\JingDianController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') C:\xampp\htdocs\Object\Application\Home\Controller\JingDianController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `attractions` WHERE `attractions_longitude` = '108.932597' AND `attractions_latitude` = '34.265473' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-31T20:55:55+08:00 ] 127.0.0.1 /Object/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\Object\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `luntan` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `luntan` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `luntan` INNER JOIN users ON users.id = luntan.user_id  ORDER BY luntan_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: users C:\xampp\htdocs\Object\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `attractions`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-31T20:57:28+08:00 ] 127.0.0.1 /Object/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\Object\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `luntan` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `luntan` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `luntan` INNER JOIN users ON users.id = luntan.user_id  ORDER BY luntan_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: users C:\xampp\htdocs\Object\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `attractions`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
