@@ -4,12 +4,12 @@ use Think\Controller;
 class IndexController extends Controller {
     public function index()
     {
-        $this->display('index/index');
+        $this->display('Index/index');
     }
 
     public function addJing()
     {
-        $this->display("index/addJing");
+        $this->display("Index/addJing");
     }
 
     public function doAddJing()
