@@ -202,11 +202,7 @@
     // 百度地图API功能
     map = new BMap.Map("allmap");
     map.centerAndZoom(new BMap.Point(108.941707,34.349582), 11);
-    var data_info = [[109.286708,34.389107,"<div style='color:red'>秦始皇陵兵马俑</div><a href=\"__MODULE__/JingDian/show?x=109.286708&y=34.389107\">详情</a><br/>地址：秦俑馆公路与秦陵北路交汇处东南 "],
-        [109.219602,34.37271,"<div style='color:red'>华清池</div><a href=\"__MODULE__/Index/JingDian/show?x=109.219602&y=34.37271\">详情</a><br/>地址：华清路038号 "],
-        [108.932597,34.265473,"<div style='color:red'>古城墙</div><a href=\"__MODULE__/JingDian/show?x=108.932597&y=34.265473\">详情</a><br/>地址：西大街与西举院巷交叉口附近 "],
-        [108.980798,34.218929,"<div style='color:red'>大唐芙蓉园</div><a href=\"__MODULE__/JingDian/show?x=108.980798&y=34.218929\">详情</a><br/>地址：陕西省西安市雁塔区芙蓉南路 "]
-    ];
+        var data_info = {$info};
     var opts = {
         width : 350,     // 信息窗口宽度
         height: 100,     // 信息窗口高度
