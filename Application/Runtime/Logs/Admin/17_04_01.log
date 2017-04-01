@@ -114,3 +114,240 @@ NOTIC: [8] Use of undefined constant time - assumed 'time' D:\wamp\www\www\Objec
 NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\www\Object\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
 ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
 
+[ 2017-04-01T10:42:57+08:00 ] 127.0.0.1 /www/Object/index.php/Admin/Index/doAddJing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\www\Object\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\wamp\www\www\Object\Application\Admin\Controller\IndexController.class.php 第 34 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\www\Object\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1406:Data too long for column 'attractions_phone' at row 1
+ [ SQL语句 ] : INSERT INTO `attractions` (`attractions_name`,`attractions_thought`,`attractions_type`,`attractions_suggest`,`attractions_price`,`attractions_time`,`attractions_address`,`attractions_longitude`,`attractions_latitude`,`attractions_route`,`attractions_phone`,`attractions_content`,`attractions_pic`) VALUES ('西安碑林博物馆','','纪念碑','2-3小时','旺季（3.1~11.30）：75.00元 淡季（12.1~2.28）：50.00元','夏季：8:00~18:45，18:00停止售票 冬季：8:00~18:00，17:15停止售票','陕西省西安市文昌门内三学街15号','108.959073','34.259106','14路、208路、213路、216路、221路、222路、23路、258路 ','029-87210764','西安碑林始建于北宋哲宗元祐二年（公元1087年），最初是漕运使吕大忠等人为保藏因唐末五代战乱而委弃市井的唐《石台孝经》、《开成石经》及颜真卿、柳公权等所书的著名石碑而兴建的，经金、元、明、清、民国历代的维修及增建，规模不断扩大，藏石日益增多，1961年被国务院列为全国第一批重点文物保护单位。 西安碑林现收藏有自汉代至今的碑石、墓志近3000件，展出1089件，收藏碑石、墓志的数量为全国之最，且藏品时代系列完整，时间跨度达2000多年，这里碑石如林，篆、隶、楷、行、草各体俱备，名家荟萃，精品林立，令人惊叹不已。 碑林不仅是中国古代文化典籍石刻的集中点之一，也是历代名家书法艺术荟萃之地。“碑林”由于碑林丛立如林，蔚为壮观而得名。 碑林已有九百多年的历史，以它独特的收藏而成为中外驰名的艺术瑰宝。','1491014577.png')
+ERR: 1406:Data too long for column 'attractions_phone' at row 1
+ [ SQL语句 ] : INSERT INTO `attractions` (`attractions_name`,`attractions_thought`,`attractions_type`,`attractions_suggest`,`attractions_price`,`attractions_time`,`attractions_address`,`attractions_longitude`,`attractions_latitude`,`attractions_route`,`attractions_phone`,`attractions_content`,`attractions_pic`) VALUES ('西安碑林博物馆','','纪念碑','2-3小时','旺季（3.1~11.30）：75.00元 淡季（12.1~2.28）：50.00元','夏季：8:00~18:45，18:00停止售票 冬季：8:00~18:00，17:15停止售票','陕西省西安市文昌门内三学街15号','108.959073','34.259106','14路、208路、213路、216路、221路、222路、23路、258路 ','029-87210764','西安碑林始建于北宋哲宗元祐二年（公元1087年），最初是漕运使吕大忠等人为保藏因唐末五代战乱而委弃市井的唐《石台孝经》、《开成石经》及颜真卿、柳公权等所书的著名石碑而兴建的，经金、元、明、清、民国历代的维修及增建，规模不断扩大，藏石日益增多，1961年被国务院列为全国第一批重点文物保护单位。 西安碑林现收藏有自汉代至今的碑石、墓志近3000件，展出1089件，收藏碑石、墓志的数量为全国之最，且藏品时代系列完整，时间跨度达2000多年，这里碑石如林，篆、隶、楷、行、草各体俱备，名家荟萃，精品林立，令人惊叹不已。 碑林不仅是中国古代文化典籍石刻的集中点之一，也是历代名家书法艺术荟萃之地。“碑林”由于碑林丛立如林，蔚为壮观而得名。 碑林已有九百多年的历史，以它独特的收藏而成为中外驰名的艺术瑰宝。','1491014577.png')
+
+[ 2017-04-01T10:43:23+08:00 ] 127.0.0.1 /www/Object/index.php/Admin/Index/doAddJing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\www\Object\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\wamp\www\www\Object\Application\Admin\Controller\IndexController.class.php 第 34 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\www\Object\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `attractions` (`attractions_name`,`attractions_thought`,`attractions_type`,`attractions_suggest`,`attractions_price`,`attractions_time`,`attractions_address`,`attractions_longitude`,`attractions_latitude`,`attractions_route`,`attractions_phone`,`attractions_content`,`attractions_pic`) VALUES ('西安碑林博物馆','','纪念碑','2-3小时','旺季（3.1~11.30）：75.00元 淡季（12.1~2.28）：50.00元','夏季：8:00~18:45，18:00停止售票 冬季：8:00~18:00，17:15停止售票','陕西省西安市文昌门内三学街15号','108.959073','34.259106','14路、208路、213路、216路、221路、222路、23路、258路 ','87210764','西安碑林始建于北宋哲宗元祐二年（公元1087年），最初是漕运使吕大忠等人为保藏因唐末五代战乱而委弃市井的唐《石台孝经》、《开成石经》及颜真卿、柳公权等所书的著名石碑而兴建的，经金、元、明、清、民国历代的维修及增建，规模不断扩大，藏石日益增多，1961年被国务院列为全国第一批重点文物保护单位。 西安碑林现收藏有自汉代至今的碑石、墓志近3000件，展出1089件，收藏碑石、墓志的数量为全国之最，且藏品时代系列完整，时间跨度达2000多年，这里碑石如林，篆、隶、楷、行、草各体俱备，名家荟萃，精品林立，令人惊叹不已。 碑林不仅是中国古代文化典籍石刻的集中点之一，也是历代名家书法艺术荟萃之地。“碑林”由于碑林丛立如林，蔚为壮观而得名。 碑林已有九百多年的历史，以它独特的收藏而成为中外驰名的艺术瑰宝。','1491014603.png') [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-01T10:43:24+08:00 ] 127.0.0.1 /www/Object/index.php/Admin/Index/addJing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\www\Object\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-01T11:44:25+08:00 ] 127.0.0.1 /www/Object/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\www\Object\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-01T11:44:28+08:00 ] 127.0.0.1 /www/Object/index.php/Admin/Index/addJing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\www\Object\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-01T11:44:32+08:00 ] 127.0.0.1 /www/Object/index.php/Admin/Index/doAddJing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\www\Object\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\wamp\www\www\Object\Application\Admin\Controller\IndexController.class.php 第 34 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\wamp\www\www\Object\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-01T11:47:19+08:00 ] 127.0.0.1 /www/Object/index.php/Admin/Index/doAddJing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\www\Object\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\wamp\www\www\Object\Application\Admin\Controller\IndexController.class.php 第 34 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\www\Object\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1406:Data too long for column 'attractions_time' at row 1
+ [ SQL语句 ] : INSERT INTO `attractions` (`attractions_name`,`attractions_thought`,`attractions_type`,`attractions_suggest`,`attractions_price`,`attractions_time`,`attractions_address`,`attractions_longitude`,`attractions_latitude`,`attractions_route`,`attractions_phone`,`attractions_content`,`attractions_pic`) VALUES ('陕西历史博物馆','陕西历史博物馆浓缩了中原文化的精髓，能够感受陕西悠久的古代历史文明。门票是免费的，但是找个导游则更好。博物馆里面内容非常丰富，很多精美藏品，并且很多都是非常珍贵的文物。','展馆','3-4小时','免费 Tips：每天限量限时发放免费参观券4000张，游客凭有效证件领取。（每日14:00前限2500张，14:00后限1500张），发完为止。','1. 冬季（11月15日至次年3月15日），09:00~17:30 停止售票时间：16:00 2. 夏季（3月16日至11月14日），08:30~18:00 停止售票时间：16:30 Tips：陕西历史博物馆平日每周一闭馆，法定节假日周一照常开放。','雁塔区小寨东路91号','108.961746','34.230944','K5路空调 游6 游8(610) 19路 24路 26路 27路 30路 34路 400路 401路 521路 527路 610路(游8) 701路 710路 721路 722路','85254727','陕西历史博物馆是位于陕西西安市内的一座国家级综合性历史类大型博物馆，是中国第一座拥有现代化的设施的大型国家级博物馆。 被誉为“古都明珠，华夏宝库”的陕西历史博物馆是展示陕西历史文化和中国古代文明的艺术殿堂。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。大多为汉唐文物，对于看惯了明清文物的爱好者来说，是一大特色。 比较典型的藏品有以下八大类：青铜器、唐代墓葬壁画、历代陶俑、历代陶瓷器、历代建材、汉唐铜镜、金银玉器、历代货币。 陕西历史博物馆的基本陈列为陕西古代文明，以历史进程为线索，选取各时代的典型文物进行组合陈列，来揭示陕西地区古代社会文明发展状况。馆内设有现代化文物库房、文物保护科技中心、图书馆、具备多种语言同声传译功能的报告厅。 西安自古帝王都，历史上先后有周、秦、汉、唐等十三个封建王朝在此建都，地上地下文物非常丰富。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。比较典型的藏品有以下八大类： 青铜器： 藏品时代上起商周，下止秦汉。种类有礼器、乐器、兵器、车马器、生活用品和生产工具。其中最为典型的商周青铜器，许多器物（如多友鼎、师献鼎等）上铸有史料价值很高的铭文。唐代墓葬壁画： 1952年至1989年先后从陕西关中地区25座唐墓里揭取的。墓主均系唐代三品以上的皇亲国戚和朝廷重臣。画面内容有四神、仪卫、建筑、狩猎、生活及唐与四邻的友好来往等。 历代陶俑： 藏品时代包括秦、汉、北朝、隋、唐和宋、元、明、清。质地有陶、彩绘陶、釉陶和三彩。历代陶瓷器： 有史前仰韶文化彩陶、西周原始青瓷、汉代釉陶、唐三彩、古玻璃、琉璃、唐秘色瓷和宋耀窑青瓷等。器物种类包括生活用品、文具和殉葬明器等。 历代建材： 藏品时代上起两周秦汉，下至唐宋明清。器物种类有陶制的瓦、瓦当、砖、昭尾、水道和石刻建材，以及金属建筑构件。 汉唐铜镜： 造形多样，图案精美。有些还铸刻着吉祥语句。 金银玉器： 包括湮金望银的铜器。其中如西周玉制礼器、春秋秦公大墓出土的金啄木鸟、西汉皇后玉玺、金银竹节铜熏炉等，均属举世罕见的精品。 历代货币： 种类繁多，有西周贝币、战国刀币、秦半两、西汉金、王五株、王莽时的各种货币、唐金银币以及稀有的古代外币。 除上述八大类外，还有字画、版本、经卷、织物、骨器、木器、漆器、铁器、石器、印章、封泥，以及近现代文物和民俗民族文物。
+','1491018439.png')
+ERR: 1406:Data too long for column 'attractions_time' at row 1
+ [ SQL语句 ] : INSERT INTO `attractions` (`attractions_name`,`attractions_thought`,`attractions_type`,`attractions_suggest`,`attractions_price`,`attractions_time`,`attractions_address`,`attractions_longitude`,`attractions_latitude`,`attractions_route`,`attractions_phone`,`attractions_content`,`attractions_pic`) VALUES ('陕西历史博物馆','陕西历史博物馆浓缩了中原文化的精髓，能够感受陕西悠久的古代历史文明。门票是免费的，但是找个导游则更好。博物馆里面内容非常丰富，很多精美藏品，并且很多都是非常珍贵的文物。','展馆','3-4小时','免费 Tips：每天限量限时发放免费参观券4000张，游客凭有效证件领取。（每日14:00前限2500张，14:00后限1500张），发完为止。','1. 冬季（11月15日至次年3月15日），09:00~17:30 停止售票时间：16:00 2. 夏季（3月16日至11月14日），08:30~18:00 停止售票时间：16:30 Tips：陕西历史博物馆平日每周一闭馆，法定节假日周一照常开放。','雁塔区小寨东路91号','108.961746','34.230944','K5路空调 游6 游8(610) 19路 24路 26路 27路 30路 34路 400路 401路 521路 527路 610路(游8) 701路 710路 721路 722路','85254727','陕西历史博物馆是位于陕西西安市内的一座国家级综合性历史类大型博物馆，是中国第一座拥有现代化的设施的大型国家级博物馆。 被誉为“古都明珠，华夏宝库”的陕西历史博物馆是展示陕西历史文化和中国古代文明的艺术殿堂。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。大多为汉唐文物，对于看惯了明清文物的爱好者来说，是一大特色。 比较典型的藏品有以下八大类：青铜器、唐代墓葬壁画、历代陶俑、历代陶瓷器、历代建材、汉唐铜镜、金银玉器、历代货币。 陕西历史博物馆的基本陈列为陕西古代文明，以历史进程为线索，选取各时代的典型文物进行组合陈列，来揭示陕西地区古代社会文明发展状况。馆内设有现代化文物库房、文物保护科技中心、图书馆、具备多种语言同声传译功能的报告厅。 西安自古帝王都，历史上先后有周、秦、汉、唐等十三个封建王朝在此建都，地上地下文物非常丰富。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。比较典型的藏品有以下八大类： 青铜器： 藏品时代上起商周，下止秦汉。种类有礼器、乐器、兵器、车马器、生活用品和生产工具。其中最为典型的商周青铜器，许多器物（如多友鼎、师献鼎等）上铸有史料价值很高的铭文。唐代墓葬壁画： 1952年至1989年先后从陕西关中地区25座唐墓里揭取的。墓主均系唐代三品以上的皇亲国戚和朝廷重臣。画面内容有四神、仪卫、建筑、狩猎、生活及唐与四邻的友好来往等。 历代陶俑： 藏品时代包括秦、汉、北朝、隋、唐和宋、元、明、清。质地有陶、彩绘陶、釉陶和三彩。历代陶瓷器： 有史前仰韶文化彩陶、西周原始青瓷、汉代釉陶、唐三彩、古玻璃、琉璃、唐秘色瓷和宋耀窑青瓷等。器物种类包括生活用品、文具和殉葬明器等。 历代建材： 藏品时代上起两周秦汉，下至唐宋明清。器物种类有陶制的瓦、瓦当、砖、昭尾、水道和石刻建材，以及金属建筑构件。 汉唐铜镜： 造形多样，图案精美。有些还铸刻着吉祥语句。 金银玉器： 包括湮金望银的铜器。其中如西周玉制礼器、春秋秦公大墓出土的金啄木鸟、西汉皇后玉玺、金银竹节铜熏炉等，均属举世罕见的精品。 历代货币： 种类繁多，有西周贝币、战国刀币、秦半两、西汉金、王五株、王莽时的各种货币、唐金银币以及稀有的古代外币。 除上述八大类外，还有字画、版本、经卷、织物、骨器、木器、漆器、铁器、石器、印章、封泥，以及近现代文物和民俗民族文物。
+','1491018439.png')
+
+[ 2017-04-01T11:47:27+08:00 ] 127.0.0.1 /www/Object/index.php/Admin/Index/doAddJing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\www\Object\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\wamp\www\www\Object\Application\Admin\Controller\IndexController.class.php 第 34 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\www\Object\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1406:Data too long for column 'attractions_time' at row 1
+ [ SQL语句 ] : INSERT INTO `attractions` (`attractions_name`,`attractions_thought`,`attractions_type`,`attractions_suggest`,`attractions_price`,`attractions_time`,`attractions_address`,`attractions_longitude`,`attractions_latitude`,`attractions_route`,`attractions_phone`,`attractions_content`,`attractions_pic`) VALUES ('陕西历史博物馆','陕西历史博物馆浓缩了中原文化的精髓，能够感受陕西悠久的古代历史文明。门票是免费的，但是找个导游则更好。博物馆里面内容非常丰富，很多精美藏品，并且很多都是非常珍贵的文物。','展馆','3-4小时','免费 Tips：每天限量限时发放免费参观券4000张，游客凭有效证件领取。（每日14:00前限2500张，14:00后限1500张），发完为止。','1. 冬季（11月15日至次年3月15日），09:00~17:30 停止售票时间：16:00 2. 夏季（3月16日至11月14日），08:30~18:00 停止售票时间：16:30 Tips：陕西历史博物馆平日每周一闭馆，法定节假日周一照常开放。','雁塔区小寨东路91号','108.961746','34.230944','K5路空调 游6 游8(610) 19路 24路 26路 27路 30路 34路 400路 401路 521路 527路 610路(游8) 701路 710路 721路 722路','85254727','陕西历史博物馆是位于陕西西安市内的一座国家级综合性历史类大型博物馆，是中国第一座拥有现代化的设施的大型国家级博物馆。 被誉为“古都明珠，华夏宝库”的陕西历史博物馆是展示陕西历史文化和中国古代文明的艺术殿堂。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。大多为汉唐文物，对于看惯了明清文物的爱好者来说，是一大特色。 比较典型的藏品有以下八大类：青铜器、唐代墓葬壁画、历代陶俑、历代陶瓷器、历代建材、汉唐铜镜、金银玉器、历代货币。 陕西历史博物馆的基本陈列为陕西古代文明，以历史进程为线索，选取各时代的典型文物进行组合陈列，来揭示陕西地区古代社会文明发展状况。馆内设有现代化文物库房、文物保护科技中心、图书馆、具备多种语言同声传译功能的报告厅。 西安自古帝王都，历史上先后有周、秦、汉、唐等十三个封建王朝在此建都，地上地下文物非常丰富。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。比较典型的藏品有以下八大类： 青铜器： 藏品时代上起商周，下止秦汉。种类有礼器、乐器、兵器、车马器、生活用品和生产工具。其中最为典型的商周青铜器，许多器物（如多友鼎、师献鼎等）上铸有史料价值很高的铭文。唐代墓葬壁画： 1952年至1989年先后从陕西关中地区25座唐墓里揭取的。墓主均系唐代三品以上的皇亲国戚和朝廷重臣。画面内容有四神、仪卫、建筑、狩猎、生活及唐与四邻的友好来往等。 历代陶俑： 藏品时代包括秦、汉、北朝、隋、唐和宋、元、明、清。质地有陶、彩绘陶、釉陶和三彩。历代陶瓷器： 有史前仰韶文化彩陶、西周原始青瓷、汉代釉陶、唐三彩、古玻璃、琉璃、唐秘色瓷和宋耀窑青瓷等。器物种类包括生活用品、文具和殉葬明器等。 历代建材： 藏品时代上起两周秦汉，下至唐宋明清。器物种类有陶制的瓦、瓦当、砖、昭尾、水道和石刻建材，以及金属建筑构件。 汉唐铜镜： 造形多样，图案精美。有些还铸刻着吉祥语句。 金银玉器： 包括湮金望银的铜器。其中如西周玉制礼器、春秋秦公大墓出土的金啄木鸟、西汉皇后玉玺、金银竹节铜熏炉等，均属举世罕见的精品。 历代货币： 种类繁多，有西周贝币、战国刀币、秦半两、西汉金、王五株、王莽时的各种货币、唐金银币以及稀有的古代外币。 除上述八大类外，还有字画、版本、经卷、织物、骨器、木器、漆器、铁器、石器、印章、封泥，以及近现代文物和民俗民族文物。
+','1491018447.png')
+ERR: 1406:Data too long for column 'attractions_time' at row 1
+ [ SQL语句 ] : INSERT INTO `attractions` (`attractions_name`,`attractions_thought`,`attractions_type`,`attractions_suggest`,`attractions_price`,`attractions_time`,`attractions_address`,`attractions_longitude`,`attractions_latitude`,`attractions_route`,`attractions_phone`,`attractions_content`,`attractions_pic`) VALUES ('陕西历史博物馆','陕西历史博物馆浓缩了中原文化的精髓，能够感受陕西悠久的古代历史文明。门票是免费的，但是找个导游则更好。博物馆里面内容非常丰富，很多精美藏品，并且很多都是非常珍贵的文物。','展馆','3-4小时','免费 Tips：每天限量限时发放免费参观券4000张，游客凭有效证件领取。（每日14:00前限2500张，14:00后限1500张），发完为止。','1. 冬季（11月15日至次年3月15日），09:00~17:30 停止售票时间：16:00 2. 夏季（3月16日至11月14日），08:30~18:00 停止售票时间：16:30 Tips：陕西历史博物馆平日每周一闭馆，法定节假日周一照常开放。','雁塔区小寨东路91号','108.961746','34.230944','K5路空调 游6 游8(610) 19路 24路 26路 27路 30路 34路 400路 401路 521路 527路 610路(游8) 701路 710路 721路 722路','85254727','陕西历史博物馆是位于陕西西安市内的一座国家级综合性历史类大型博物馆，是中国第一座拥有现代化的设施的大型国家级博物馆。 被誉为“古都明珠，华夏宝库”的陕西历史博物馆是展示陕西历史文化和中国古代文明的艺术殿堂。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。大多为汉唐文物，对于看惯了明清文物的爱好者来说，是一大特色。 比较典型的藏品有以下八大类：青铜器、唐代墓葬壁画、历代陶俑、历代陶瓷器、历代建材、汉唐铜镜、金银玉器、历代货币。 陕西历史博物馆的基本陈列为陕西古代文明，以历史进程为线索，选取各时代的典型文物进行组合陈列，来揭示陕西地区古代社会文明发展状况。馆内设有现代化文物库房、文物保护科技中心、图书馆、具备多种语言同声传译功能的报告厅。 西安自古帝王都，历史上先后有周、秦、汉、唐等十三个封建王朝在此建都，地上地下文物非常丰富。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。比较典型的藏品有以下八大类： 青铜器： 藏品时代上起商周，下止秦汉。种类有礼器、乐器、兵器、车马器、生活用品和生产工具。其中最为典型的商周青铜器，许多器物（如多友鼎、师献鼎等）上铸有史料价值很高的铭文。唐代墓葬壁画： 1952年至1989年先后从陕西关中地区25座唐墓里揭取的。墓主均系唐代三品以上的皇亲国戚和朝廷重臣。画面内容有四神、仪卫、建筑、狩猎、生活及唐与四邻的友好来往等。 历代陶俑： 藏品时代包括秦、汉、北朝、隋、唐和宋、元、明、清。质地有陶、彩绘陶、釉陶和三彩。历代陶瓷器： 有史前仰韶文化彩陶、西周原始青瓷、汉代釉陶、唐三彩、古玻璃、琉璃、唐秘色瓷和宋耀窑青瓷等。器物种类包括生活用品、文具和殉葬明器等。 历代建材： 藏品时代上起两周秦汉，下至唐宋明清。器物种类有陶制的瓦、瓦当、砖、昭尾、水道和石刻建材，以及金属建筑构件。 汉唐铜镜： 造形多样，图案精美。有些还铸刻着吉祥语句。 金银玉器： 包括湮金望银的铜器。其中如西周玉制礼器、春秋秦公大墓出土的金啄木鸟、西汉皇后玉玺、金银竹节铜熏炉等，均属举世罕见的精品。 历代货币： 种类繁多，有西周贝币、战国刀币、秦半两、西汉金、王五株、王莽时的各种货币、唐金银币以及稀有的古代外币。 除上述八大类外，还有字画、版本、经卷、织物、骨器、木器、漆器、铁器、石器、印章、封泥，以及近现代文物和民俗民族文物。
+','1491018447.png')
+
+[ 2017-04-01T11:47:52+08:00 ] 127.0.0.1 /www/Object/index.php/Admin/Index/doAddJing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\www\Object\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\wamp\www\www\Object\Application\Admin\Controller\IndexController.class.php 第 34 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\www\Object\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1406:Data too long for column 'attractions_time' at row 1
+ [ SQL语句 ] : INSERT INTO `attractions` (`attractions_name`,`attractions_thought`,`attractions_type`,`attractions_suggest`,`attractions_price`,`attractions_time`,`attractions_address`,`attractions_longitude`,`attractions_latitude`,`attractions_route`,`attractions_phone`,`attractions_content`,`attractions_pic`) VALUES ('陕西历史博物馆','陕西历史博物馆浓缩了中原文化的精髓，能够感受陕西悠久的古代历史文明。门票是免费的，但是找个导游则更好。博物馆里面内容非常丰富，很多精美藏品，并且很多都是非常珍贵的文物。','展馆','3-4小时','免费 Tips：每天限量限时发放免费参观券4000张，游客凭有效证件领取。（每日14:00前限2500张，14:00后限1500张），发完为止。','1. 冬季（11月15日至次年3月15日），09:00~17:30 停止售票时间：16:00 2. 夏季（3月16日至11月14日），08:30~18:00 停止售票时间：16:30 Tips','雁塔区小寨东路91号','108.961746','34.230944','K5路空调 游6 游8(610) 19路 24路 26路 27路 30路 34路 400路 401路 521路 527路 610路(游8) 701路 710路 721路 722路','85254727','陕西历史博物馆是位于陕西西安市内的一座国家级综合性历史类大型博物馆，是中国第一座拥有现代化的设施的大型国家级博物馆。 被誉为“古都明珠，华夏宝库”的陕西历史博物馆是展示陕西历史文化和中国古代文明的艺术殿堂。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。大多为汉唐文物，对于看惯了明清文物的爱好者来说，是一大特色。 比较典型的藏品有以下八大类：青铜器、唐代墓葬壁画、历代陶俑、历代陶瓷器、历代建材、汉唐铜镜、金银玉器、历代货币。 陕西历史博物馆的基本陈列为陕西古代文明，以历史进程为线索，选取各时代的典型文物进行组合陈列，来揭示陕西地区古代社会文明发展状况。馆内设有现代化文物库房、文物保护科技中心、图书馆、具备多种语言同声传译功能的报告厅。 西安自古帝王都，历史上先后有周、秦、汉、唐等十三个封建王朝在此建都，地上地下文物非常丰富。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。比较典型的藏品有以下八大类： 青铜器： 藏品时代上起商周，下止秦汉。种类有礼器、乐器、兵器、车马器、生活用品和生产工具。其中最为典型的商周青铜器，许多器物（如多友鼎、师献鼎等）上铸有史料价值很高的铭文。唐代墓葬壁画： 1952年至1989年先后从陕西关中地区25座唐墓里揭取的。墓主均系唐代三品以上的皇亲国戚和朝廷重臣。画面内容有四神、仪卫、建筑、狩猎、生活及唐与四邻的友好来往等。 历代陶俑： 藏品时代包括秦、汉、北朝、隋、唐和宋、元、明、清。质地有陶、彩绘陶、釉陶和三彩。历代陶瓷器： 有史前仰韶文化彩陶、西周原始青瓷、汉代釉陶、唐三彩、古玻璃、琉璃、唐秘色瓷和宋耀窑青瓷等。器物种类包括生活用品、文具和殉葬明器等。 历代建材： 藏品时代上起两周秦汉，下至唐宋明清。器物种类有陶制的瓦、瓦当、砖、昭尾、水道和石刻建材，以及金属建筑构件。 汉唐铜镜： 造形多样，图案精美。有些还铸刻着吉祥语句。 金银玉器： 包括湮金望银的铜器。其中如西周玉制礼器、春秋秦公大墓出土的金啄木鸟、西汉皇后玉玺、金银竹节铜熏炉等，均属举世罕见的精品。 历代货币： 种类繁多，有西周贝币、战国刀币、秦半两、西汉金、王五株、王莽时的各种货币、唐金银币以及稀有的古代外币。 除上述八大类外，还有字画、版本、经卷、织物、骨器、木器、漆器、铁器、石器、印章、封泥，以及近现代文物和民俗民族文物。
+','1491018472.png')
+ERR: 1406:Data too long for column 'attractions_time' at row 1
+ [ SQL语句 ] : INSERT INTO `attractions` (`attractions_name`,`attractions_thought`,`attractions_type`,`attractions_suggest`,`attractions_price`,`attractions_time`,`attractions_address`,`attractions_longitude`,`attractions_latitude`,`attractions_route`,`attractions_phone`,`attractions_content`,`attractions_pic`) VALUES ('陕西历史博物馆','陕西历史博物馆浓缩了中原文化的精髓，能够感受陕西悠久的古代历史文明。门票是免费的，但是找个导游则更好。博物馆里面内容非常丰富，很多精美藏品，并且很多都是非常珍贵的文物。','展馆','3-4小时','免费 Tips：每天限量限时发放免费参观券4000张，游客凭有效证件领取。（每日14:00前限2500张，14:00后限1500张），发完为止。','1. 冬季（11月15日至次年3月15日），09:00~17:30 停止售票时间：16:00 2. 夏季（3月16日至11月14日），08:30~18:00 停止售票时间：16:30 Tips','雁塔区小寨东路91号','108.961746','34.230944','K5路空调 游6 游8(610) 19路 24路 26路 27路 30路 34路 400路 401路 521路 527路 610路(游8) 701路 710路 721路 722路','85254727','陕西历史博物馆是位于陕西西安市内的一座国家级综合性历史类大型博物馆，是中国第一座拥有现代化的设施的大型国家级博物馆。 被誉为“古都明珠，华夏宝库”的陕西历史博物馆是展示陕西历史文化和中国古代文明的艺术殿堂。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。大多为汉唐文物，对于看惯了明清文物的爱好者来说，是一大特色。 比较典型的藏品有以下八大类：青铜器、唐代墓葬壁画、历代陶俑、历代陶瓷器、历代建材、汉唐铜镜、金银玉器、历代货币。 陕西历史博物馆的基本陈列为陕西古代文明，以历史进程为线索，选取各时代的典型文物进行组合陈列，来揭示陕西地区古代社会文明发展状况。馆内设有现代化文物库房、文物保护科技中心、图书馆、具备多种语言同声传译功能的报告厅。 西安自古帝王都，历史上先后有周、秦、汉、唐等十三个封建王朝在此建都，地上地下文物非常丰富。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。比较典型的藏品有以下八大类： 青铜器： 藏品时代上起商周，下止秦汉。种类有礼器、乐器、兵器、车马器、生活用品和生产工具。其中最为典型的商周青铜器，许多器物（如多友鼎、师献鼎等）上铸有史料价值很高的铭文。唐代墓葬壁画： 1952年至1989年先后从陕西关中地区25座唐墓里揭取的。墓主均系唐代三品以上的皇亲国戚和朝廷重臣。画面内容有四神、仪卫、建筑、狩猎、生活及唐与四邻的友好来往等。 历代陶俑： 藏品时代包括秦、汉、北朝、隋、唐和宋、元、明、清。质地有陶、彩绘陶、釉陶和三彩。历代陶瓷器： 有史前仰韶文化彩陶、西周原始青瓷、汉代釉陶、唐三彩、古玻璃、琉璃、唐秘色瓷和宋耀窑青瓷等。器物种类包括生活用品、文具和殉葬明器等。 历代建材： 藏品时代上起两周秦汉，下至唐宋明清。器物种类有陶制的瓦、瓦当、砖、昭尾、水道和石刻建材，以及金属建筑构件。 汉唐铜镜： 造形多样，图案精美。有些还铸刻着吉祥语句。 金银玉器： 包括湮金望银的铜器。其中如西周玉制礼器、春秋秦公大墓出土的金啄木鸟、西汉皇后玉玺、金银竹节铜熏炉等，均属举世罕见的精品。 历代货币： 种类繁多，有西周贝币、战国刀币、秦半两、西汉金、王五株、王莽时的各种货币、唐金银币以及稀有的古代外币。 除上述八大类外，还有字画、版本、经卷、织物、骨器、木器、漆器、铁器、石器、印章、封泥，以及近现代文物和民俗民族文物。
+','1491018472.png')
+
+[ 2017-04-01T11:48:47+08:00 ] 127.0.0.1 /www/Object/index.php/Admin/Index/doAddJing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\www\Object\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Use of undefined constant time - assumed 'time' D:\wamp\www\www\Object\Application\Admin\Controller\IndexController.class.php 第 34 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\www\Object\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `attractions` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\www\Object\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `attractions` (`attractions_name`,`attractions_thought`,`attractions_type`,`attractions_suggest`,`attractions_price`,`attractions_time`,`attractions_address`,`attractions_longitude`,`attractions_latitude`,`attractions_route`,`attractions_phone`,`attractions_content`,`attractions_pic`) VALUES ('陕西历史博物馆','陕西历史博物馆浓缩了中原文化的精髓，能够感受陕西悠久的古代历史文明。门票是免费的，但是找个导游则更好。博物馆里面内容非常丰富，很多精美藏品，并且很多都是非常珍贵的文物。','展馆','3-4小时','免费 Tips：每天限量限时发放免费参观券4000张，游客凭有效证件领取。（每日14:00前限2500张，14:00后限1500张），发完为止。','09:00~17:30 停止售票','雁塔区小寨东路91号','108.961746','34.230944','K5路空调 游6 游8(610) 19路 24路 26路 27路 30路 34路 400路 401路 521路 527路 610路(游8) 701路 710路 721路 722路','85254727','陕西历史博物馆是位于陕西西安市内的一座国家级综合性历史类大型博物馆，是中国第一座拥有现代化的设施的大型国家级博物馆。 被誉为“古都明珠，华夏宝库”的陕西历史博物馆是展示陕西历史文化和中国古代文明的艺术殿堂。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。大多为汉唐文物，对于看惯了明清文物的爱好者来说，是一大特色。 比较典型的藏品有以下八大类：青铜器、唐代墓葬壁画、历代陶俑、历代陶瓷器、历代建材、汉唐铜镜、金银玉器、历代货币。 陕西历史博物馆的基本陈列为陕西古代文明，以历史进程为线索，选取各时代的典型文物进行组合陈列，来揭示陕西地区古代社会文明发展状况。馆内设有现代化文物库房、文物保护科技中心、图书馆、具备多种语言同声传译功能的报告厅。 西安自古帝王都，历史上先后有周、秦、汉、唐等十三个封建王朝在此建都，地上地下文物非常丰富。陕西历史博物馆建成后，集中珍藏陕西地区出土的珍贵文物37万余件。比较典型的藏品有以下八大类： 青铜器： 藏品时代上起商周，下止秦汉。种类有礼器、乐器、兵器、车马器、生活用品和生产工具。其中最为典型的商周青铜器，许多器物（如多友鼎、师献鼎等）上铸有史料价值很高的铭文。唐代墓葬壁画： 1952年至1989年先后从陕西关中地区25座唐墓里揭取的。墓主均系唐代三品以上的皇亲国戚和朝廷重臣。画面内容有四神、仪卫、建筑、狩猎、生活及唐与四邻的友好来往等。 历代陶俑： 藏品时代包括秦、汉、北朝、隋、唐和宋、元、明、清。质地有陶、彩绘陶、釉陶和三彩。历代陶瓷器： 有史前仰韶文化彩陶、西周原始青瓷、汉代釉陶、唐三彩、古玻璃、琉璃、唐秘色瓷和宋耀窑青瓷等。器物种类包括生活用品、文具和殉葬明器等。 历代建材： 藏品时代上起两周秦汉，下至唐宋明清。器物种类有陶制的瓦、瓦当、砖、昭尾、水道和石刻建材，以及金属建筑构件。 汉唐铜镜： 造形多样，图案精美。有些还铸刻着吉祥语句。 金银玉器： 包括湮金望银的铜器。其中如西周玉制礼器、春秋秦公大墓出土的金啄木鸟、西汉皇后玉玺、金银竹节铜熏炉等，均属举世罕见的精品。 历代货币： 种类繁多，有西周贝币、战国刀币、秦半两、西汉金、王五株、王莽时的各种货币、唐金银币以及稀有的古代外币。 除上述八大类外，还有字画、版本、经卷、织物、骨器、木器、漆器、铁器、石器、印章、封泥，以及近现代文物和民俗民族文物。
+','1491018527.png') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-01T11:48:48+08:00 ] 127.0.0.1 /www/Object/index.php/Admin/Index/addJing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\www\Object\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
