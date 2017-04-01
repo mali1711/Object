@@ -8,7 +8,7 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="/Object/Public/Style/boots/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/www/Object/Public/Style/boots/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,14 +29,14 @@
             <p>您已经来到系统后台</p>
         </div>
         <h3> 景点操作：</h3>
-        <p><a class="btn btn-primary btn-lg" href="/Object/index.php/Admin/Index/addJing" role="button">添加景点</a></p>
+        <p><a class="btn btn-primary btn-lg" href="/www/Object/index.php/Admin/Index/addJing" role="button">添加景点</a></p>
     </div>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/Object/Public/Style/boots/js/bootstrap.min.js"></script>
+<script src="/www/Object/Public/Style/boots/js/bootstrap.min.js"></script>
 
 </body>
 </html>

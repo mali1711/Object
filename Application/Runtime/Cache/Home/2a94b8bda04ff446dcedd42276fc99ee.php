@@ -26,7 +26,7 @@
         }
     </style>
     <!-- Bootstrap -->
-    <link href="/Object/Public/Style/boots/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/www/Object/Public/Style/boots/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -67,19 +67,19 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="/Object/Public/Image/QQ20170330110306.png" alt="...">
+                        <img src="/www/Object/Public/Image/QQ20170330110306.png" alt="...">
                         <div class="carousel-caption">
                             西安古城墙
                         </div>
                     </div>
                     <div class="item">
-                        <img src="/Object/Public/Image/QQ20170330110522.png" alt="...">
+                        <img src="/www/Object/Public/Image/QQ20170330110522.png" alt="...">
                         <div class="carousel-caption">
                             兵马俑
                         </div>
                     </div>
                     <div class="item">
-                        <img src="/Object/Public/Image/QQ20170330110619.png" alt="...">
+                        <img src="/www/Object/Public/Image/QQ20170330110619.png" alt="...">
                         <div class="carousel-caption">
                             老城
                         </div>
@@ -101,7 +101,7 @@
             <center>
                 <h3>用户登录</h3>
                 <table width="">
-                    <form action="/Object/index.php/Home/Index/doLogin" method="post">
+                    <form action="/www/Object/index.php/Home/Index/doLogin" method="post">
                         <tr>
                             <td width="" align="center"> <input type="text" name="name" value="" style="width:220px;"></td>
                         </tr>
@@ -112,7 +112,7 @@
                             <td align="center"><input type="submit" value="立即登录" style="width:120px;background-color:dodgerblue"></td>
                         </tr>
                         <tr>
-                            <td align="center">还不是会员？ &nbsp &nbsp  &nbsp  &nbsp<a href="/Object/index.php/Home/Index/register">免费注册</a></td>
+                            <td align="center">还不是会员？ &nbsp &nbsp  &nbsp  &nbsp<a href="/www/Object/index.php/Home/Index/register">免费注册</a></td>
                         </tr>
                     </form>
                 </table>
@@ -124,7 +124,7 @@
     <div class="row">
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-                <img style="height:150px;" src="/Object/Public/Image/20170328115433.png" alt="...">
+                <img style="height:150px;" src="/www/Object/Public/Image/20170328115433.png" alt="...">
                 <div class="caption">
                     <h3>景点名字</h3>
                     <p><a href="#">查看详情</a></p>
@@ -134,7 +134,7 @@
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-                <img style="height:150px;" src="/Object/Public/Image/20170328115433.png" alt="...">
+                <img style="height:150px;" src="/www/Object/Public/Image/20170328115433.png" alt="...">
                 <div class="caption">
                     <h3>景点名字</h3>
                     <p><a href="#">查看详情</a></p>
@@ -144,7 +144,7 @@
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-                <img style="height:150px;" src="/Object/Public/Image/20170328115433.png" alt="...">
+                <img style="height:150px;" src="/www/Object/Public/Image/20170328115433.png" alt="...">
                 <div class="caption">
                     <h3>景点名字</h3>
                     <p><a href="#">查看详情</a></p>
@@ -154,7 +154,7 @@
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-                <img style="height:150px;" src="/Object/Public/Image/20170328115433.png" alt="...">
+                <img style="height:150px;" src="/www/Object/Public/Image/20170328115433.png" alt="...">
                 <div class="caption">
                     <h3>景点名字</h3>
                     <p><a href="#">查看详情</a></p>
@@ -175,14 +175,14 @@
             <div class="alert alert-info">
             <?php echo ($vo["content"]); ?>
                 <span class="pull-right">
-                     <a href="/Object/index.php/Home/Index/delPingLun?user=<?php echo ($vo["user_id"]); ?>&pl=<?php echo ($vo["luntan_id"]); ?>" class="text-danger">删除</a>
+                     <a href="/www/Object/index.php/Home/Index/delPingLun?user=<?php echo ($vo["user_id"]); ?>&pl=<?php echo ($vo["luntan_id"]); ?>" class="text-danger">删除</a>
                 </span>
             </div>
         </div>
     </div><?php endforeach; endif; ?>
     <?php echo ($page); ?>
     <h3>我要评论</h3>
-    <form action="/Object/index.php/Home/Index/pingLun" method="post">
+    <form action="/www/Object/index.php/Home/Index/pingLun" method="post">
         <textarea name="content" rows="10" cols="100" name=""></textarea><br/>
         <input type="submit" class="btn btn-primary" value="确认提交" />
     </form>
@@ -191,7 +191,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/Object/Public/Style/boots/js/bootstrap.min.js"></script>
+<script src="/www/Object/Public/Style/boots/js/bootstrap.min.js"></script>
 </body>
 </html>
 <script type="text/javascript">

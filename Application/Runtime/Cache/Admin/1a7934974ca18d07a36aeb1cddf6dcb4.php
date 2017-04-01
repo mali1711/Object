@@ -8,7 +8,7 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="/Object/Public/Style/boots/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/www/Object/Public/Style/boots/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +26,7 @@
 <center>
 <div style="padding: 100px 100px 10px;">
     <h2>添加景区</h2>
-    <form action="/Object/index.php/Admin/Index/doAddJing" method="post" style="width: 700px;" class="bs-example bs-example-form" role="form" enctype="multipart/form-data">
+    <form action="/www/Object/index.php/Admin/Index/doAddJing" method="post" style="width: 700px;" class="bs-example bs-example-form" role="form" enctype="multipart/form-data">
             <input name="attractions_pic" type="file">
         <div class="input-group">
             <span class="input-group-addon " >名字</span>
@@ -83,7 +83,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/Object/Public/Style/boots/js/bootstrap.min.js"></script>
+<script src="/www/Object/Public/Style/boots/js/bootstrap.min.js"></script>
 </center>
 </body>
 </html>
