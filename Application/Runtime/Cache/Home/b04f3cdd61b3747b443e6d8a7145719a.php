@@ -16,6 +16,9 @@
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link  rel="stylesheet" href="/www/Object/Public/Style/pinglun/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/www/Object/Public/Style/pinglun/css/sinaFaceAndEffec.css" />
+    <script type="text/javascript" src="/www/Object/Public/Style/pinglun/js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -58,6 +61,59 @@
         <h3>走进<?php echo ($list["attractions_name"]); ?></h3>
         <p class="thumbnail"><?php echo ($list["attractions_content"]); ?></p>
     </div>
+        <div id="content" style="width: 700px; height: auto;margin-left:320px;margin-top:40px">
+            <div class="wrap">
+                <div class="comment">
+                    <div class="head-face">
+                        <img src="/www/Object/Public/Style/pinglun/images/1.jpg" / >
+                        <p>我是鸟</p>
+                    </div>
+                    <div class="content">
+                        <div class="cont-box">
+                            <textarea class="text" placeholder="请输入..."></textarea>
+                        </div>
+                        <div class="tools-box">
+                            <div class="operator-box-btn"><span class="face-icon"  >☺</span><span class="img-icon">▧</span></div>
+                            <div class="submit-btn"><input type="button" onClick="out()"value="提交评论" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="info-show">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="/www/Object/Public/Style/pinglun/js/main.js"></script>
+        <script type="text/javascript" src="/www/Object/Public/Style/pinglun/js/sinaFaceAndEffec.js"></script>
+        <script type="text/javascript">
+            // 绑定表情
+            $('.face-icon').SinaEmotion($('.text'));
+            // 测试本地解析
+            function out() {
+                var inputText = $('.text').val();
+                $('#info-show ul').append(reply(AnalyticEmotion(inputText)));
+            }
+
+            var html;
+            function reply(content){
+                html  = '<li>';
+                html += '<div class="head-face">';
+                html += '<img src="/www/Object/Public/Style/pinglun/images/1.jpg" / >';
+                html += '</div>';
+                html += '<div class="reply-cont">';
+                html += '<p class="username">小小红色飞机</p>';
+                html += '<p class="comment-body">'+content+'</p>';
+                html += '<p class="comment-footer">2016年10月5日　回复　点赞54　转发12</p>';
+                html += '</div>';
+                html += '</li>';
+                return html;
+            }
+        </script>
+
+        <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';clear:both;">
+            <br><br><br><br><br>
+            <p>适用浏览器：IE8、360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari浏览器。</p>
+        </div>
 </div>
 
 </div>

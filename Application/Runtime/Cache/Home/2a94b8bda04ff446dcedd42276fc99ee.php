@@ -24,6 +24,14 @@
         tr{
             height: 50px;
         }
+        .tiaojian{
+            margin-left:30px;
+            float: left;
+            color: #0f0f0f;
+        }
+        .sousuo{
+            margin-bottom: 40px;
+        }
     </style>
     <!-- Bootstrap -->
     <link href="/www/Object/Public/Style/boots/css/bootstrap.min.css" rel="stylesheet">
@@ -56,46 +64,40 @@
 </nav>
  <div class="row">
         <div class="col-md-9">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
+            <dl class="dl-horizontal sousuo">
+                <dt>景点类型</dt>
+                <dd>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="/www/Object/Public/Image/QQ20170330110306.png" alt="...">
-                        <div class="carousel-caption">
-                            西安古城墙
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="/www/Object/Public/Image/QQ20170330110522.png" alt="...">
-                        <div class="carousel-caption">
-                            兵马俑
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="/www/Object/Public/Image/QQ20170330110619.png" alt="...">
-                        <div class="carousel-caption">
-                            老城
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+                    <a class="tiaojian text-info">全部</a>
+                    <a class="tiaojian">自然景观</a>
+                    <a class="tiaojian">人文景观</a>
+                    <a class="tiaojian">自然景观</a>
+                    <a class="tiaojian">展馆</a>
+                    <a class="tiaojian">其他</a>
+                </dd>
+            </dl>
+            <dl class="dl-horizontal sousuo">
+                <dt>游玩时间</dt>
+                <dd>
+                    <a class="tiaojian text-info">全部</a>
+                    <a class="tiaojian">2小时以内</a>
+                    <a class="tiaojian">2-4小时</a>
+                    <a class="tiaojian">半天到1天</a>
+                    <a class="tiaojian">2-4天</a>
+                    <a class="tiaojian">4天以上</a>
+                </dd>
+            </dl>
+            <dl class="dl-horizontal sousuo">
+                <dt>适应季节</dt>
+                <dd>
+                    <a class="tiaojian text-info">全部</a>
+                    <a class="tiaojian">春季</a>
+                    <a class="tiaojian">夏季</a>
+                    <a class="tiaojian">秋季</a>
+                    <a class="tiaojian">冬季</a>
+                    <a class="tiaojian">四季皆宜</a>
+                </dd>
+            </dl>
         </div>
         <div class="col-md-3">
             <center>
