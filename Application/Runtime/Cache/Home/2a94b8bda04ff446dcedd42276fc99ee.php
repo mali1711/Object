@@ -66,36 +66,36 @@
         <div class="col-md-9">
             <dl class="dl-horizontal sousuo">
                 <dt>景点类型</dt>
-                <dd>
+                <dd class="attractions_type">
 
-                    <a class="tiaojian text-info">全部</a>
-                    <a class="tiaojian">自然景观</a>
-                    <a class="tiaojian">人文景观</a>
-                    <a class="tiaojian">自然景观</a>
-                    <a class="tiaojian">展馆</a>
-                    <a class="tiaojian">其他</a>
+                    <a class="tiaojian text-info"  href="#">全部</a>
+                    <a class="tiaojian" href="#">自然景观</a>
+                    <a class="tiaojian"  href="#">人文景观</a>
+                    <a class="tiaojian"  href="#">公园</a>
+                    <a class="tiaojian"  href="#">展馆</a>
+                    <a class="tiaojian"  href="#">其他</a>
                 </dd>
             </dl>
             <dl class="dl-horizontal sousuo">
                 <dt>游玩时间</dt>
-                <dd>
+                <dd class="attractions_sugges">
                     <a class="tiaojian text-info">全部</a>
-                    <a class="tiaojian">2小时以内</a>
-                    <a class="tiaojian">2-4小时</a>
-                    <a class="tiaojian">半天到1天</a>
-                    <a class="tiaojian">2-4天</a>
-                    <a class="tiaojian">4天以上</a>
+                    <a class="tiaojian"  href="#">2小时以内</a>
+                    <a class="tiaojian"  href="#">2-4小时</a>
+                    <a class="tiaojian"  href="#">半天到1天</a>
+                    <a class="tiaojian"  href="#">2-4天</a>
+                    <a class="tiaojian"  href="#">4天以上</a>
                 </dd>
             </dl>
             <dl class="dl-horizontal sousuo">
                 <dt>适应季节</dt>
                 <dd>
-                    <a class="tiaojian text-info">全部</a>
-                    <a class="tiaojian">春季</a>
-                    <a class="tiaojian">夏季</a>
-                    <a class="tiaojian">秋季</a>
-                    <a class="tiaojian">冬季</a>
-                    <a class="tiaojian">四季皆宜</a>
+                    <a class="tiaojian text-info"  href="#">全部</a>
+                    <a class="tiaojian"  href="#">春季</a>
+                    <a class="tiaojian"  href="#">夏季</a>
+                    <a class="tiaojian"  href="#">秋季</a>
+                    <a class="tiaojian"  href="#">冬季</a>
+                    <a class="tiaojian"  href="#">四季皆宜</a>
                 </dd>
             </dl>
         </div>
@@ -165,29 +165,6 @@
             </div>
         </div>
     </div>
-    <h3>用户评论</h3>
-    <?php if(is_array($pingLun)): foreach($pingLun as $key=>$vo): ?><div class="media">
-        <div class="media-left">
-            <a href="#">
-                <h4 class="media-heading"><?php echo ($vo["name"]); ?>:</h4>
-            </a>
-        </div>
-        <div class="media-body">
-
-            <div class="alert alert-info">
-            <?php echo ($vo["content"]); ?>
-                <span class="pull-right">
-                     <a href="/www/Object/index.php/Home/Index/delPingLun?user=<?php echo ($vo["user_id"]); ?>&pl=<?php echo ($vo["luntan_id"]); ?>" class="text-danger">删除</a>
-                </span>
-            </div>
-        </div>
-    </div><?php endforeach; endif; ?>
-    <?php echo ($page); ?>
-    <h3>我要评论</h3>
-    <form action="/www/Object/index.php/Home/Index/pingLun" method="post">
-        <textarea name="content" rows="10" cols="100" name=""></textarea><br/>
-        <input type="submit" class="btn btn-primary" value="确认提交" />
-    </form>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -197,31 +174,82 @@
 </body>
 </html>
 <script type="text/javascript">
-    // 百度地图API功能
-    map = new BMap.Map("allmap");
-    map.centerAndZoom(new BMap.Point(108.941707,34.349582), 11);
-        var data_info = <?php echo ($info); ?>;
-    var opts = {
-        width : 350,     // 信息窗口宽度
-        height: 100,     // 信息窗口高度
-        title : "" , // 信息窗口标题
-        enableMessage:true//设置允许信息窗发送短息
+    /*为所有class为tiaojian的标签添加点击事件，并且打印出他们的标签内容，这里的this指的是你点击的标签的本身*/
+    $(".tiaojian").click(function(){
+        var value =$(this).html();
+        var key = $(this).parent().attr('class');
+        $.ajax({
+            url:"/www/Object/index.php/Home/index/text",
+            type:"get",
+            dataType:"json",
+            async:true,
+            data: {key:key,value:value},
+            success:function(json){
+               list(json);
+            },
+            error:function(){
+            }
+        });
+    });
+
+    function findoPsition() {
+        $.ajax({
+            url:"/www/Object/index.php/Home/index/attractions_info",
+            type:"get",
+            dataType:"json",
+            async:true,
+            data:"jsonText",
+            success:function(json){
+                // 百度地图API功能
+                list(json);
+            },
+            error:function(){
+            }
+        });
     };
-    for(var i=0;i<data_info.length;i++){
-        var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));  // 创建标注
-        var content = data_info[i][2];
-        map.addOverlay(marker);               // 将标注添加到地图中
-        addClickHandler(content,marker);
-    }
-    function addClickHandler(content,marker){
-        marker.addEventListener("click",function(e){
-            openInfo(content,e)}
-        );
-    }
-    function openInfo(content,e){
-        var p = e.target;
-        var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
-        var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象
-        map.openInfoWindow(infoWindow,point); //开启信息窗口
+    getattractions();
+    function getattractions() {
+        $.ajax({
+            url:"/www/Object/index.php/Home/index/attractions_info",
+            type:"get",
+            dataType:"json",
+            async:true,
+            data:"jsonText",
+            success:function(json){
+                // 百度地图API功能
+                list(json);
+            },
+            error:function(){
+            }
+        });
+    };
+    //百度接口封装的api
+    function list(json) {
+        map = new BMap.Map("allmap");
+        map.centerAndZoom(new BMap.Point(108.941707,34.349582), 11);
+        var data_info = json;
+        var opts = {
+            width : 350,     // 信息窗口宽度
+            height: 100,     // 信息窗口高度
+            title : "" , // 信息窗口标题
+            enableMessage:true//设置允许信息窗发送短息
+        };
+        for(var i=0;i<data_info.length;i++){
+            var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));  // 创建标注
+            var content = data_info[i][2];
+            map.addOverlay(marker);               // 将标注添加到地图中
+            addClickHandler(content,marker);
+        }
+        function addClickHandler(content,marker){
+            marker.addEventListener("click",function(e){
+                openInfo(content,e)}
+            );
+        }
+        function openInfo(content,e){
+            var p = e.target;
+            var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+            var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象
+            map.openInfoWindow(infoWindow,point); //开启信息窗口
+        }
     }
 </script>

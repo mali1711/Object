@@ -10,11 +10,9 @@ class IndexController extends Controller {
         $show       = $Page->show();
         $pingLun = $pl->join('users ON users.id = luntan.user_id')->order('luntan_id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         $name =  $_SESSION['users']['info']['name'];
-        $city = $this->attractions_info();
         $this->assign('name',$name);
         $this->assign('pingLun',$pingLun);
         $this->assign('page',$show);
-        $this->assign('info',$city);
         $this->display('Index/index');
     }
 
@@ -110,8 +108,6 @@ class IndexController extends Controller {
 
 public function attractions_info()
 {
-
-
     $attractions = M('attractions');
     $list = $attractions->select();
     foreach($list as $k=>$v){
@@ -119,6 +115,20 @@ public function attractions_info()
         $data[$k][] =  floatval($v['attractions_latitude']);
         $data[$k][] =  "<div style='color:red'>{$v['attractions_name']}</div><a href=\"index.php/Home/JingDian/show?x={$v['attractions_longitude']}&y={$v['attractions_latitude']}\">详情</a><br/>地址：{$v['attractions_address']}";
     };
-    return json_encode($data);
+     echo json_encode($data);
+}
+
+    public function text()
+    {
+        $attractions = M('attractions');
+        $key = $_GET['key'];
+        $res[$key] = $_GET['value'];
+        $list = $attractions->where($res)->select();
+        foreach($list as $k=>$v){
+            $data[$k][] =  floatval($v['attractions_longitude']);
+            $data[$k][] =  floatval($v['attractions_latitude']);
+            $data[$k][] =  "<div style='color:red'>{$v['attractions_name']}</div><a href=\"index.php/Home/JingDian/show?x={$v['attractions_longitude']}&y={$v['attractions_latitude']}\">详情</a><br/>地址：{$v['attractions_address']}";
+        };
+        echo json_encode($data);
     }
 }
