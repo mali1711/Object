@@ -8,7 +8,7 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="/www/object/Public/Style/boots/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/www/Object/Public/Style/boots/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,9 +16,9 @@
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link  rel="stylesheet" href="/www/object/Public/Style/pinglun/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="/www/object/Public/Style/pinglun/css/sinaFaceAndEffec.css" />
-    <script type="text/javascript" src="/www/object/Public/Style/pinglun/js/jquery-1.8.3.min.js"></script>
+    <link  rel="stylesheet" href="/www/Object/Public/Style/pinglun/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/www/Object/Public/Style/pinglun/css/sinaFaceAndEffec.css" />
+    <script type="text/javascript" src="/www/Object/Public/Style/pinglun/js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -31,7 +31,7 @@
     <!-- Stack the columns on mobile by making one full-width and the other half-width -->
     <div class="row">
         <div class="col-xs-12 col-md-6">
-            <img src="/www/object/Public/Uploads/Jingdian/<?php echo ($list["attractions_pic"]); ?>" alt="秦始皇陵兵马俑" class="img-rounded ">
+            <img src="/www/Object/Public/Uploads/Jingdian/<?php echo ($list["attractions_pic"]); ?>" alt="秦始皇陵兵马俑" class="img-rounded ">
         </div>
         <div class="col-xs-6 col-md-6">
             <dl class="dl-horizontal thumbnail">
@@ -61,66 +61,16 @@
         <h3>走进<?php echo ($list["attractions_name"]); ?></h3>
         <p class="thumbnail"><?php echo ($list["attractions_content"]); ?></p>
     </div>
-        <div id="content" style="width: 700px; height: auto;margin-left:320px;margin-top:40px">
-            <div class="wrap">
-                <div class="comment">
-                    <div class="head-face">
-                        <img src="/www/object/Public/Style/pinglun/images/1.jpg" / >
-                        <p>我是鸟</p>
-                    </div>
-                    <div class="content">
-                        <div class="cont-box">
-                            <textarea class="text" placeholder="请输入..."></textarea>
-                        </div>
-                        <div class="tools-box">
-                            <div class="operator-box-btn"><span class="face-icon"  >☺</span><span class="img-icon">▧</span></div>
-                            <div class="submit-btn"><input type="button" onClick="out()"value="提交评论" /></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="info-show">
-                    <ul></ul>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript" src="/www/object/Public/Style/pinglun/js/main.js"></script>
-        <script type="text/javascript" src="/www/object/Public/Style/pinglun/js/sinaFaceAndEffec.js"></script>
-        <script type="text/javascript">
-            // 绑定表情
-            $('.face-icon').SinaEmotion($('.text'));
-            // 测试本地解析
-            function out() {
-                var inputText = $('.text').val();
-                $('#info-show ul').append(reply(AnalyticEmotion(inputText)));
-            }
-
-            var html;
-            function reply(content){
-                html  = '<li>';
-                html += '<div class="head-face">';
-                html += '<img src="/www/object/Public/Style/pinglun/images/1.jpg" / >';
-                html += '</div>';
-                html += '<div class="reply-cont">';
-                html += '<p class="username">小小红色飞机</p>';
-                html += '<p class="comment-body">'+content+'</p>';
-                html += '<p class="comment-footer">2016年10月5日　回复　点赞54　转发12</p>';
-                html += '</div>';
-                html += '</li>';
-                return html;
-            }
-        </script>
-
-        <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';clear:both;">
-            <br><br><br><br><br>
-            <p>适用浏览器：IE8、360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari浏览器。</p>
-        </div>
 </div>
-
+    <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+    <script type="text/javascript" src="/www/Object/Public/Style/utf8-php/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/www/Object/Public/Style/utf8-php/ueditor.all.js"></script>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/www/object/Public/Style/boots/js/bootstrap.min.js"></script>
+<script src="/www/Object/Public/Style/boots/js/bootstrap.min.js"></script>
 
 </body>
 </html>

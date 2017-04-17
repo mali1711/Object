@@ -123,6 +123,12 @@ public function attractions_info()
         $attractions = M('attractions');
         $key = $_GET['key'];
         $res[$key] = $_GET['value'];
+        foreach($res as $k=>$v){
+            if($v=='全部'){
+                unset($res[$k]);
+            }
+        };
+
         $list = $attractions->where($res)->select();
         foreach($list as $k=>$v){
             $data[$k][] =  floatval($v['attractions_longitude']);
