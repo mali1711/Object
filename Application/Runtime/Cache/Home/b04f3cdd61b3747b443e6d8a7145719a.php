@@ -19,6 +19,10 @@
     <link  rel="stylesheet" href="/www/Object/Public/Style/pinglun/css/main.css" />
     <link rel="stylesheet" type="text/css" href="/www/Object/Public/Style/pinglun/css/sinaFaceAndEffec.css" />
     <script type="text/javascript" src="/www/Object/Public/Style/pinglun/js/jquery-1.8.3.min.js"></script>
+    <!--百度编辑器start-->
+    <script type="text/javascript" src="/www/Object/Public/Style/utf8-php/ueditor.config.js"></script>
+    <script type="text/javascript" src="/www/Object/Public/Style/utf8-php/ueditor.all.js"></script>
+    <!--百度编辑器end-->
 </head>
 <body>
 <div class="container-fluid">
@@ -62,10 +66,21 @@
         <p class="thumbnail"><?php echo ($list["attractions_content"]); ?></p>
     </div>
 </div>
-    <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
-    <script type="text/javascript" src="/www/Object/Public/Style/utf8-php/ueditor.config.js"></script>
-    <!-- 编辑器源码文件 -->
-    <script type="text/javascript" src="/www/Object/Public/Style/utf8-php/ueditor.all.js"></script>
+    <form action="/www/Object/index.php/Home/Index/pingLun" method="post">
+        <input type="hidden" name="attractions_id" value="<?php echo ($list["attractions_id"]); ?>"/>
+        <script id="container" style="width:50%;height:200px;" name="article_content" type="text/plain"></script>
+        <input class="btn btn-primary" type="submit" value="确认点提交">
+        <div class="btn btn-danger"  onclick="clearLocalData()" >清空草稿箱</div>
+    </form>
+    <!-- 配置文件 -->
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var editor = UE.getEditor('container');
+        function clearLocalData () {
+            UE.getEditor('editor').execCommand( "clearlocaldata" );
+            alert("已清空草稿箱")
+        }
+    </script>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>

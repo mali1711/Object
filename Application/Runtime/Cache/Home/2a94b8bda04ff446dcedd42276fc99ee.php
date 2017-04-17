@@ -179,7 +179,7 @@
         var value =$(this).html();
         var key = $(this).parent().attr('class');
         $.ajax({
-            url:"/www/Object/index.php/Home/index/text",
+            url:"/www/Object/index.php/Home/index/findAttractions",
             type:"get",
             dataType:"json",
             async:true,

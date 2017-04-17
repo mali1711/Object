@@ -118,7 +118,7 @@ public function attractions_info()
      echo json_encode($data);
 }
 
-    public function text()
+    public function findAttractions()
     {
         $attractions = M('attractions');
         $key = $_GET['key'];
@@ -128,7 +128,6 @@ public function attractions_info()
                 unset($res[$k]);
             }
         };
-
         $list = $attractions->where($res)->select();
         foreach($list as $k=>$v){
             $data[$k][] =  floatval($v['attractions_longitude']);
@@ -136,5 +135,10 @@ public function attractions_info()
             $data[$k][] =  "<div style='color:red'>{$v['attractions_name']}</div><a href=\"index.php/Home/JingDian/show?x={$v['attractions_longitude']}&y={$v['attractions_latitude']}\">详情</a><br/>地址：{$v['attractions_address']}";
         };
         echo json_encode($data);
+    }
+
+    public function text()
+    {
+        $this->display('index/text');
     }
 }

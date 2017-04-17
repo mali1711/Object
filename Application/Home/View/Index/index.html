@@ -181,7 +181,7 @@
         var value =$(this).html();
         var key = $(this).parent().attr('class');
         $.ajax({
-            url:"__MODULE__/index/text",
+            url:"__MODULE__/index/findAttractions",
             type:"get",
             dataType:"json",
             async:true,
